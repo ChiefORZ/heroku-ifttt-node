@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "axios": "^0.22.0",
+    "micro": "^9.3.4",
+    "micro-dev": "^3.0.0",
+    "micro-match": "^1.0.2",
+    "urlencoded-body-parser": "^3.0.0"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "name": "heroku-ifttt-node",
+  "scripts": {
+    "dev": "micro-dev -p $PORT",
+    "start": "micro -l tcp://0.0.0.0:$PORT"
+  },
+  "version": "1.0.0"
+}
