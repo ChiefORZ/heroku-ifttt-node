@@ -16,7 +16,11 @@ module.exports = async (req, res) => {
         value3: `${body?.['app']} ${body?.['release']}`
       }
       console.log(`Sending post request to ${iftttUrl}`, iftttBody)
-      await axios.post(iftttUrl, iftttBody);
+      await axios.post(iftttUrl, iftttBody, {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
       return send(res, 200, 'ok');
     } else {
       return send(res, 404, 'not found');
