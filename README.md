@@ -7,7 +7,7 @@ Use IFTTT as a Heroku deploy hook.
 
 First, go to the [Maker channel](https://ifttt.com/maker) on IFTTT and connect it.
 
-Then, push this button [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy) to create a new Heroku app.
+Then, push this button [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/ChiefORZ/heroku-ifttt-node) to create a new Heroku app.
 
 Finally, go to any other Heroku app for which you wish to notify IFTTT when they're deployed, and add an HTTP deploy hook pointing to `https://[URL]/ifttt/[your Maker secret key]`, where `[URL]` is the URL of the Heroku app you just created, and your Maker key is the one you can get from the [Maker channel](https://ifttt.com/maker), like so:
 
