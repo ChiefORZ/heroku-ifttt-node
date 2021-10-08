@@ -1,0 +1,11 @@
+{
+  "name": "Heroku IFTTT Node",
+  "description": "Send Heroku deploys to IFTTT",
+  "keywords": [
+    "heroku",
+    "ifttt",
+    "node"
+  ],
+  "repository": "https://github.com/ChiefORZ/heroku-ifttt-node",
+  "success_url": "https://github.com/ChiefORZ/heroku-ifttt-node"
+}
