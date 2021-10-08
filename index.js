@@ -15,6 +15,7 @@ module.exports = async (req, res) => {
         value2: body?.['url'],
         value3: `${body?.['app']} ${body?.['release']}`
       }
+      console.log(`Sending post request to ${iftttUrl}`, iftttBody)
       await axios.post(iftttUrl, iftttBody);
       return send(res, 200, 'ok');
     } else {
